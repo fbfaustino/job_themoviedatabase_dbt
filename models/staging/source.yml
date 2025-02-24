@@ -1,0 +1,7 @@
+sources:
+  - name: main
+    description: "Fonte de dados do DuckDB contendo informações sobre filmes."
+    tables:
+      - name: generos
+      - name: filmes
+      - name: generos_filmes

@@ -1,7 +1,10 @@
 sources:
-  - name: main
+  - name: bronze
     description: "Fonte de dados do DuckDB contendo informações sobre filmes."
     tables:
       - name: generos
       - name: filmes
       - name: generos_filmes
+      - name: pais_produtor
+      - name: produtora
+      - name: palavras_chave

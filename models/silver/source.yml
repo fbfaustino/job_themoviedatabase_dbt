@@ -1,5 +1,5 @@
 sources:
-  - name: silver
+  - name: bronze
     description: "Fonte de dados do DuckDB contendo informações sobre filmes."
     tables:
       - name: generos

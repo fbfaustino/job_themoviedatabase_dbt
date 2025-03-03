@@ -1,1 +1,0 @@
-select * from {{ ref('stg_filmes') }} limit 10

@@ -2,6 +2,6 @@ with generos as (
     select 
         id id_genero, 
         nome nome_genero 
-    from {{ source('bronze', 'generos') }}
+    from {{ source('silver', 'generos') }}
 )
 select * from generos

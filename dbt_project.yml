@@ -18,9 +18,13 @@ models:
   job_themoviedatabase_dbt:
     staging:
       +materialized: view
-      +schema: "BRONZE"
+      +schema: "SILVER"
     intermediate:
       +materialized: table
       +schema: "SILVER"
     marts:
+      +schema: "GOLD"
       +materialized: table
+    silver:
+      +materialized: table
+      +schema: "SILVER"

@@ -9,7 +9,7 @@ with filmes as (
         a.nome as nome_filme,
         a.sinopse,
         a.popularidade,
-        a.data_lancamento,
+        TO_DATE(NULLIF(a.data_lancamento, ''), 'YYYY-MM-DD') AS data_lancamento,
         a.titulo_original,
         b.generos,
         c.palavra_chave_us || c.palavra_chave_br as palavras_chave,

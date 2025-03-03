@@ -1,9 +1,13 @@
 WITH filmes AS (
     SELECT 
-        id id_filme,
-        title AS nome_filme,
-        overview AS sinopse,
-        release_date data_lancamento
+        id_filme,
+        nome,
+        sinopse,
+        quantidade_votos,
+        nota,
+        popularidade,
+        data_lancamento,
+        data_dados
     FROM {{ source('silver', 'filmes') }}  
 )
 SELECT * FROM filmes
